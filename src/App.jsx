@@ -5,6 +5,7 @@ import './App.css';
 import Header from './Header/Header';
 import About from './About/About';
 import Experience from './Experience/Experience';
+import Skills from './SkillCard/Skills';
 
 function App() {
 
@@ -15,6 +16,8 @@ function App() {
       <About />
       <div style={{ marginBottom: "2rem" }}></div>
       <Experience />
+      <div style={{ marginBottom: "2rem" }}></div>
+      <Skills />
     </>
   )
 }

@@ -5,7 +5,7 @@ import myImage from "../assets/myImage.jpg";
 export default function About() {
   return (
     <>
-  <h1 className="fw-bold text-center mb-5 " style={{ textShadow: "2px 2px 10px rgba(0, 0, 0, 0.4)" }}>About</h1>
+  
     <div className="about-page" >
       <div className="container mt-5">
         <div className="row d-flex align-items-center flex-column-reverse flex-lg-row text-center text-lg-start">
