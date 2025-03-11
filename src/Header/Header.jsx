@@ -20,7 +20,7 @@ export default function Header() {
         </button>
         <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
           <ul className="navbar-nav gap-3 text-center">
-            {['About', 'Experience','Skills', 'Projects', 'Coding Profiles', 'Socials'].map((item, index) => (
+            {['About', 'Experience','Skills', 'Projects', 'Coding Profiles', 'Socials','Resume'].map((item, index) => (
               <li className="nav-item" key={index}>
                 <a className="nav-link text-black fw-medium" style={{ textShadow: "0 2px 4px rgba(0, 0, 0, 0.5)" }} href="#">
                   {item}

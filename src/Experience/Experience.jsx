@@ -6,9 +6,9 @@ export default function Experience(){
           <div className="card shadow-sm mb-4" style={{ backgroundColor: "#f5f5f5" }}>
             <div className="card-body">
               <h5 className="card-title ">Healthletic Lifestyle</h5>
-              <p className="card-subtitle mb-2 text-muted">Duration: Feb'25 - Current</p>
+              <p className="card-subtitle mb-2 text-muted">Duration: Feb'25 - March'25</p>
               <p className="card-text fw-bold">Backend Developer Intern</p>
-              <p>Working with the backend team to develop various endpoints as per requirements. </p><p>Worked with NodeJS and ExpressJS till now. </p><p>Currently working to design endpoints for HMS.</p>
+              <p>Worked with the backend team to develop various endpoints as per requirements. </p><p>Worked with NodeJS and ExpressJS to design endpoint for user forgot password and used JWT for authentication </p>
             </div>
           </div>
           <div className="card shadow-sm" style={{ backgroundColor: "#f5f5f5" }}>
