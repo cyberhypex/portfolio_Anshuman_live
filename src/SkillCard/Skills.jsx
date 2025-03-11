@@ -1,6 +1,8 @@
 import React from 'react';
-import java from '../assets/java.png';
 import SkillCardComponent from './SkillCardComponent';
+
+
+import java from '../assets/java.png';
 import python from '../assets/python.png';
 import js from '../assets/JavaScript.png';
 import html from '../assets/html.png';
@@ -16,34 +18,41 @@ import mng from '../assets/mongoDB.png';
 import nd from '../assets/node.png';
 import exp from '../assets/express.png';
 import dc from '../assets/docker.png';
+import gt from '../assets/github.png';
+import pm from '../assets/postman.png';
+
+const skills = [
+    { image: java, name: "Java" },
+    { image: python, name: "Python" },
+    { image: js, name: "JavaScript" },
+    { image: html, name: "HTML5" },
+    { image: css, name: "CSS3" },
+    { image: boot, name: "Bootstrap CSS" },
+    { image: tail, name: "Tailwind CSS" },
+    { image: rct, name: "React JS" },
+    { image: nd, name: "Node JS" },
+    { image: exp, name: "Express JS" },
+    { image: sp, name: "Spring" },
+    { image: spb, name: "Spring Boot" },
+    { image: sps, name: "Spring Security" },
+    { image: msq, name: "MySQL" },
+    { image: mng, name: "MongoDB" },
+    { image: dc, name: "Docker" },
+    { image: gt, name: "GitHub" },
+    { image: pm, name: "Postman" }
+];
 
 export default function Skills() {
     return (
-        <>
-        <h1 className="fw-bold text-center  mb-5" style={{ textShadow: "2px 2px 10px rgba(0, 0, 0, 0.4)", marginBottom: "0" }}>Skills</h1>
-
-            <SkillCardComponent image={java} name="Java" />
-            <SkillCardComponent image={python} name="Python" />
-            <SkillCardComponent image={js} name="Javascript" />
-            <SkillCardComponent image={html} name="HTML5" />
-            <SkillCardComponent image={css} name="CSS3" />
-            <SkillCardComponent image={boot} name="BootStrap CSS" />
-            <SkillCardComponent image={tail} name="Tailwind CSS" />
-            <SkillCardComponent image={rct} name="React JS" />
-            <SkillCardComponent image={nd} name="Node JS" />
-            <SkillCardComponent image={exp} name="Express JS" />
-            <SkillCardComponent image={sp} name="Spring" />
-            <SkillCardComponent image={spb} name="Springboot" />
-            <SkillCardComponent image={sps} name="Spring Security" />
-            <SkillCardComponent image={msq} name="My-Sql" />    
-            <SkillCardComponent image={mng} name="MongoDB" />
-            <SkillCardComponent image={dc} name="Docker" />
-
-
-
-
-            
-
-        </>
+        <div className="container text-center">
+            <h1 className="fw-bold mb-5" style={{ textShadow: "2px 2px 10px rgba(0, 0, 0, 0.4)" }}>
+                Skills
+            </h1>
+            <div className="row justify-content-center">
+                {skills.map((skill, index) => (
+                    <SkillCardComponent key={index} image={skill.image} name={skill.name} />
+                ))}
+            </div>
+        </div>
     );
 }
