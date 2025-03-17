@@ -28,18 +28,16 @@ export default function CodingProfiles() {
             <div className="row justify-content-center">
                 {profiles.map((profile, index) => (
                     <div key={index} className="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
-                        <div className="card shadow-lg text-center p-3" style={{ maxWidth: "165px", margin: "auto" }}>
-                            <a href={profile.link} target="_blank" rel="noopener noreferrer">
+                        <a href={profile.link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+                            <div className="card shadow-lg text-center p-3" style={{ maxWidth: "165px", margin: "auto" }}>
                                 <img src={profile.image} alt={profile.name} className="card-img-top mx-auto" style={{ width: "90px", height: "90px", objectFit: "contain" }} />
-                            </a>
-                            <div className="card-body p-2">
-                                <h6 className="card-title">
-                                    <a href={profile.link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "black" }}>
+                                <div className="card-body p-2">
+                                    <h6 className="card-title" style={{ color: "black", margin: 0 }}>
                                         {profile.name}
-                                    </a>
-                                </h6>
+                                    </h6>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 ))}
             </div>
